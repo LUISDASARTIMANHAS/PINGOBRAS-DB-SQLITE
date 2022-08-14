@@ -12,8 +12,7 @@ const fastify = require("fastify")({
 fastify.register(require("@fastify/formbody"));
 
 const db = require("./sqlite.js");
-const errorMessage =
-  "Whoops! Error connecting to the database–please try again!";
+const errorMessage = "Whoops! Error connecting to the database–please try again!";
 
 // OnRoute hook to list endpoints
 const routes = { endpoints: [] };
@@ -43,7 +42,7 @@ fastify.get("/messages", async (request, reply) => {
 
 // Add new message (auth)
 fastify.post("/message", async (request, reply) => {
-  let data = {};
+  let data = {'teste':"hype"};
   const auth = authorized(request.headers.admin_key);
   if(!auth || !request.body || !request.body.message) data.success = false;
   else if(auth) data.success = await db.addMessage(request.body.message);
