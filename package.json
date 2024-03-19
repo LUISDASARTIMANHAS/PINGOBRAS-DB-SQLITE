@@ -7,7 +7,7 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "fastify": "^4.4.0",
+    "fastify": "^4.10.2",
     "sqlite": "^4.1.2",
     "sqlite3": "^5.1.5",
     "casual": "^1.6.2",
