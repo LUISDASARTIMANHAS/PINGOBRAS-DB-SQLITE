@@ -14,7 +14,7 @@
     "@fastify/formbody": "^8.0.0"
   },
   "engines": {
-    "node": "22.x"
+    "node": "24.x"
   },
   "repository": {
     "url": "https://glitch.com/edit/#!/glitch-blank-sqlite"
