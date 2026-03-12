@@ -9,7 +9,7 @@
   "dependencies": {
     "fastify": "^5.0.0",
     "sqlite": "^5.0.0",
-    "sqlite3": "^5.1.5",
+    "sqlite3": "^6.0.0",
     "casual": "^1.6.2",
     "@fastify/formbody": "^8.0.0"
   },
